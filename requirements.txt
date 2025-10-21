@@ -1,0 +1,18 @@
+# Core ML/AI libraries
+torch>=2.0.0
+torchvision
+openai>=1.0.0
+
+# Image processing
+pillow>=10.0.0
+pdf2image
+
+# Data handling
+pandas
+numpy
+
+# LM Evaluation
+lm-eval
+
+# Utilities
+python-dotenv
