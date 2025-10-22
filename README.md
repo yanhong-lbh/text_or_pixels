@@ -17,7 +17,7 @@ We demonstrate **off-the-shelf** vision language models (VLMs) have innate capab
 
 
 <p align="center">
-    <img src="images/vllm_pipeline.png" width="350" style="margin-bottom: 0.2;"/><img src="images/text_token_tolerance.png" width="400" style="margin-bottom: 0.2;"/>
+    <img src="images/vllm_pipeline.png" width="300" style="margin-bottom: 0.2;"/><img src="images/text_token_tolerance.png" width="350" style="margin-bottom: 0.2;"/>
 <p>
 
 
