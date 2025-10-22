@@ -10,17 +10,22 @@ Official codebase for the EMNLP 2025 Findings paper:
 <!-- [![Paper](https://img.shields.io/badge/Paper-EMNLP%202025-blue)](https://github.com/yanhong-lbh/text_or_pixels)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) -->
 
----
-
 ## Overview
 
-This repository demonstrates a simple yet effective approach to compress textual inputs for large language models by rendering text as images. By feeding context as a single image instead of raw text tokens, we achieve:
+This repository demonstrates a simple yet effective approach to compress textual inputs for large language models by rendering text as images.
+
+![Pipeline](images/vllm_pipeline.png)
+*Figure 1: Our text-as-image compression pipeline*
+
+By feeding context as a single image instead of raw text tokens, we achieve:
 
 - **~50% token reduction** without performance loss
 - **Up to 45% latency improvement** on larger models
 - **Competitive performance** on long-context retrieval and summarization tasks
 
----
+![Text Token Tolerance](images/text_token_tolerance.png)
+*Figure 2: Text token tolerance analysis. The maximum text tokens $m^\star$ that can be preserved without accuracy loss, plotted against the visual tokens $k$ generated from the image. Results show a consistent reduction of roughly $1/2$ in decoder tokens.*
+
 
 ## Installation
 
