@@ -31,7 +31,46 @@ By feeding context as a single image instead of raw text tokens, we find:
 *Figure 2: Text token tolerance analysis. The maximum text tokens that can be preserved without accuracy loss, plotted against the visual tokens generated from the image. Results show a consistent reduction of roughly 1/2 in decoder tokens.* -->
 
 
+
 ## Installation
+
+### Prerequisites
+
+This project requires system-level dependencies that **cannot be installed via pip alone**:
+- **poppler-utils**: Required by `pdf2image` for PDF processing
+- **Tectonic**: LaTeX engine for document rendering
+
+### System Dependencies (Required)
+
+#### For Ubuntu/Debian:
+
+```bash
+# Update package list
+apt-get update -qq
+
+# Install poppler-utils (required for pdf2image)
+apt-get install -y poppler-utils
+
+# Install Tectonic (LaTeX engine)
+wget https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.15.0/tectonic-0.15.0-x86_64-unknown-linux-musl.tar.gz
+tar -xzf tectonic-0.15.0-x86_64-unknown-linux-musl.tar.gz
+mv tectonic /usr/local/bin/
+chmod +x /usr/local/bin/tectonic
+```
+
+#### For macOS:
+
+```bash
+brew install poppler tectonic
+```
+
+#### For other Linux distributions:
+
+Use your package manager to install `poppler-utils` and follow the [Tectonic installation instructions](https://tectonic-typesetting.github.io/en-US/install.html) for your platform.
+
+### Python Dependencies
+
+After installing system dependencies, clone the repository and install Python packages:
 
 ```bash
 git clone https://github.com/yanhong-lbh/text_or_pixels.git
@@ -40,6 +79,16 @@ cd text_or_pixels
 pip install -r requirements.txt
 ```
 
+### LM Evaluation Harness (Required for data generation)
+
+The project uses the LM Evaluation Harness for generating long-context evaluation data. Install it separately:
+
+```bash
+git clone --depth 1 https://github.com/EleutherAI/lm-evaluation-harness
+cd lm-evaluation-harness
+pip install -e .
+cd ..
+```
 ---
 
 ## Quick Start
