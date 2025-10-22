@@ -1,4 +1,4 @@
-# Text or Pixels? It Takes Half: On the Token Efficiency of Visual Text Inputs in Multimodal LLMs【EMNLP 2025 (Findings) 🔥】
+# Text or Pixels? It Takes Half: On the Token Efficiency of Visual Text Inputs in Multimodal LLM [EMNLP 2025 (Findings) 🔥]
 [![Paper](https://img.shields.io/badge/Paper-EMNLP%202025-blue)](https://github.com/yanhong-lbh/text_or_pixels)
 <a href="https://arxiv.org/abs/2510.18279" target="_blank">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-2510.18279-red?logo=arxiv" height="20" /></a>
