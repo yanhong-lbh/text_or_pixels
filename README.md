@@ -171,6 +171,22 @@ python run_qwen.py \
 
 --- -->
 
+## 📚 Citation
+
+If you find this work useful, please cite our paper:
+
+```bibtex
+@inproceedings{li-lan-zhou-2025-textOrPixels,
+    title = "Text or Pixels? Evaluating Efficiency and Understanding of LLMs with Visual Text Inputs",
+    author = "Li, Yanhong and Lan, Zixuan and Zhou, Jiawei",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+}
+```
+
 ## ✉️ Contact
 
 - Yanhong Li - [yanhongl@allenai.org](mailto:yanhongl@allenai.org)
