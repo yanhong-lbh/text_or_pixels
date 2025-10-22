@@ -13,7 +13,7 @@
 
 ## Overview
 
-We demonstrate off-the-shelf vision language models (VLMs) have innate capabilities of compressing text with vision tokens to process information more efficiently. We explore a simple yet effective approach to represent textual inputs with rendered images for large language model (LLM) decoders, where we consistently observe around 1/2 compression ratio, i.e. half of the decoder input tokens are naturally reduced without loss of task accuracy.
+We demonstrate **off-the-shelf** vision language models (VLMs) have innate capabilities of compressing text with vision tokens to process information more efficiently. We explore a simple yet effective approach to represent textual inputs with rendered images for large language model (LLM) decoders, where we consistently observe around 1/2 compression ratio, i.e. half of the decoder input tokens are naturally reduced without loss of task accuracy. _Note that no specific OCR or text-as-image task fine-tuning is applied._
 
 
 <p align="center">
