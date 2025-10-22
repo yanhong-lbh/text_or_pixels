@@ -171,7 +171,7 @@ python run_qwen.py \
 
 --- -->
 
-## Contact
+## ✉️ Contact
 
 - Yanhong Li - [yanhongl@allenai.org](mailto:yanhongl@allenai.org)
 - Zixuan Lan - [zixuanlan@uchicago.edu](mailto:zixuanlan@uchicago.edu)
