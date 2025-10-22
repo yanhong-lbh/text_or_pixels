@@ -24,7 +24,7 @@ By feeding context as a single image instead of raw text tokens, we achieve:
 - **Competitive performance** on long-context retrieval and summarization tasks
 
 <img src="images/text_token_tolerance.png" alt="Text Token Tolerance" width="50%">
-*Figure 2: Text token tolerance analysis. The maximum text tokens $m^\star$ that can be preserved without accuracy loss, plotted against the visual tokens $k$ generated from the image. Results show a consistent reduction of roughly $1/2$ in decoder tokens.*
+*Figure 2: Text token tolerance analysis. The maximum text tokens that can be preserved without accuracy loss, plotted against the visual tokens generated from the image. Results show a consistent reduction of roughly 1/2 in decoder tokens.*
 
 
 ## Installation
