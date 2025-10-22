@@ -32,7 +32,7 @@ By feeding context as a single image instead of raw text tokens, we find:
 
 
 
-## Installation
+## 🧩 Installation
 
 ### Prerequisites
 
