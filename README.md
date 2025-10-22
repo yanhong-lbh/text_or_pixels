@@ -1,10 +1,6 @@
-# Text or Pixels? It Takes Half
+# Text or Pixels? It Takes Half: On the Token Efficiency of Visual Text Inputs in Multimodal LLMs [EMNLP 2025 (Findings)]
 
-Official codebase for the EMNLP 2025 Findings paper:
-
-**"Text or Pixels? It Takes Half: On the Token Efficiency of Visual Text Inputs in Multimodal LLMs"**
-
-*Yanhong Li\*, Zixuan Lan\*, Jiawei Zhou*  
+Authors: *Yanhong Li\*, Zixuan Lan\*, Jiawei Zhou*  
 (\*Equal contribution)
 
 <!-- [![Paper](https://img.shields.io/badge/Paper-EMNLP%202025-blue)](https://github.com/yanhong-lbh/text_or_pixels)
@@ -12,7 +8,12 @@ Official codebase for the EMNLP 2025 Findings paper:
 
 ## Overview
 
-This repository demonstrates a simple yet effective approach to compress textual inputs for large language models by rendering text as images.
+We demonstrate off-the-shelf vision language models (VLMs) have innate capabilities of compressing text with vision tokens to process information more efficiently. We explore a simple yet effective approach to represent textual inputs with rendered images for large language model (LLM) decoders, where we consistently observe around 1/2 compression ratio, i.e. half of the decoder input tokens are naturally reduced without loss of task accuracy, for both long-context information retrieval and long-document summarization.
+
+
+<p align="center">
+    <img src="images/vllm_pipeline.png" width="400" style="margin-bottom: 0.2;"/><img src="images/text_token_tolerance.png" width="450" style="margin-bottom: 0.2;"/>
+<p>
 
 <img src="images/vllm_pipeline.png" alt="Pipeline" width="50%">
 *Figure 1: Our text-as-image compression pipeline*
