@@ -1,31 +1,34 @@
-# Text or Pixels? It Takes Half: On the Token Efficiency of Visual Text Inputs in Multimodal LLMs [EMNLP 2025 (Findings)]
+# Text or Pixels? It Takes Half: On the Token Efficiency of Visual Text Inputs in Multimodal LLMs【EMNLP 2025 (Findings) 🔥】
+[![Paper](https://img.shields.io/badge/Paper-EMNLP%202025-blue)](https://github.com/yanhong-lbh/text_or_pixels)
+<a href="https://arxiv.org/abs/2510.18279" target="_blank">
+    <img alt="arXiv" src="https://img.shields.io/badge/arXiv-2510.18279-red?logo=arxiv" height="20" /></a>
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Authors: *Yanhong Li\*, Zixuan Lan\*, Jiawei Zhou*  
+*Yanhong Li\*, Zixuan Lan\*, Jiawei Zhou*  
 (\*Equal contribution)
 
-<!-- [![Paper](https://img.shields.io/badge/Paper-EMNLP%202025-blue)](https://github.com/yanhong-lbh/text_or_pixels)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) -->
+> **A picture is worth a thousand words**
+
+
 
 ## Overview
 
-We demonstrate off-the-shelf vision language models (VLMs) have innate capabilities of compressing text with vision tokens to process information more efficiently. We explore a simple yet effective approach to represent textual inputs with rendered images for large language model (LLM) decoders, where we consistently observe around 1/2 compression ratio, i.e. half of the decoder input tokens are naturally reduced without loss of task accuracy, for both long-context information retrieval and long-document summarization.
+We demonstrate off-the-shelf vision language models (VLMs) have innate capabilities of compressing text with vision tokens to process information more efficiently. We explore a simple yet effective approach to represent textual inputs with rendered images for large language model (LLM) decoders, where we consistently observe around 1/2 compression ratio, i.e. half of the decoder input tokens are naturally reduced without loss of task accuracy.
 
 
 <p align="center">
     <img src="images/vllm_pipeline.png" width="400" style="margin-bottom: 0.2;"/><img src="images/text_token_tolerance.png" width="450" style="margin-bottom: 0.2;"/>
 <p>
 
-<img src="images/vllm_pipeline.png" alt="Pipeline" width="50%">
-*Figure 1: Our text-as-image compression pipeline*
 
-By feeding context as a single image instead of raw text tokens, we achieve:
+By feeding context as a single image instead of raw text tokens, we find:
 
 - **~50% token reduction** without performance loss
 - **Up to 45% latency improvement** on larger models
-- **Competitive performance** on long-context retrieval and summarization tasks
+- **Competitive performance** on long-context information retrieval and long-document summarization tasks
 
-<img src="images/text_token_tolerance.png" alt="Text Token Tolerance" width="50%">
-*Figure 2: Text token tolerance analysis. The maximum text tokens that can be preserved without accuracy loss, plotted against the visual tokens generated from the image. Results show a consistent reduction of roughly 1/2 in decoder tokens.*
+<!-- <img src="images/text_token_tolerance.png" alt="Text Token Tolerance" width="50%">
+*Figure 2: Text token tolerance analysis. The maximum text tokens that can be preserved without accuracy loss, plotted against the visual tokens generated from the image. Results show a consistent reduction of roughly 1/2 in decoder tokens.* -->
 
 
 ## Installation
