@@ -91,7 +91,7 @@ cd ..
 ```
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
 ### 1. Generate Long-Context Data
 
