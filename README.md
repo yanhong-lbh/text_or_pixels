@@ -177,14 +177,24 @@ python run_qwen.py \
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@inproceedings{li-lan-zhou-2025-textOrPixels,
-    title = "Text or Pixels? Evaluating Efficiency and Understanding of LLMs with Visual Text Inputs",
-    author = "Li, Yanhong and Lan, Zixuan and Zhou, Jiawei",
+@inproceedings{li-etal-2025-text,
+    title = "Text or Pixels? Evaluating Efficiency and Understanding of {LLM}s with Visual Text Inputs",
+    author = "Li, Yanhong  and
+      Lan, Zixuan  and
+      Zhou, Jiawei",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
     booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
     month = nov,
     year = "2025",
     address = "Suzhou, China",
     publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.558/",
+    doi = "10.18653/v1/2025.findings-emnlp.558",
+    pages = "10564--10578",
+    ISBN = "979-8-89176-335-7"
 }
 ```
 
